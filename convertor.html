@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertor </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class=" bg-emerald-400 grid place-content-center h-screen">
+    <form class="w-full h-auto overflow:hidden">
+        <div class="w-[350px] h-[320px] rounded-lg  bg-white border-[0.95px] shadow-lg border-white" >
+            <div class=" w-full h-auto  ">
+                <p class="pl-4 text-black text-xl font-lg"> Currency Convertor</p>
+                <p class="  mt-4 pl-4 text-sm text-black">Enter Amount</p>
+                <div class=" w-full h-auto pl-3 border-1 border-gray-100 overflow-hidden ">
+                    <input class=" w-[250px] h-6 rounded-lg p-3 " type="text" >
+                </div>
+
+            </div>
+            <div class=" mt-1 w-full h-auto flex flex-row jusify-around items-center">
+                <div class=" ml-3 h-auto w-full p-3 overflow-hidden ">
+                    <p class=""> From</p>
+                    <div class="dropdown from shadow-lg rounded-lg items-center overflow-hidden w-[100px] flex flex-row h-[40px] border-2 bg-white border-gray-100">
+                    <img class="h-[30px] w-[40px]" src="https://flagsapi.com/US/flat/64.png">
+                    <select class="rounded-lg" name="From">
+                        <!-- <option value="USD">USD</option>
+                        <option value="INR">INR</option>
+                        <option value="AD">AD</option> -->
+                    </select>
+                    </div> 
+                </div>
+                <div class="flex items-center text-center mt-4 text-2xl"><i class="fa-duotone fa-solid fa-money-bill-transfer "></i></div>
+                <div class="mt-5 ml-5  mb-5  h-auto w-full p-3 border-1 overflow-hidden ">
+                    <p>To</p>
+                    <div class="  to dropdown shadow-lg rounded-lg overflow-hidden w-[100px] items-center flex flex-row h-[40px] border-2 bg-white border-gray-100">
+                    <img class="h-[30px] w-[40px]" src="https://flagsapi.com/IN/flat/64.png">
+                    <select class=" rounded-lg" name="To">
+                        <!-- <option value="USD">USD</option>
+                        <option value="INR" selected>INR</option>
+                        <option value="AD">AD</option> -->
+                    </select>
+                    </div>
+                </div>
+            </div>
+            <div class=" mt-[1px] h-1 w-[40px] ml-4 mb-6">
+                <p class="text-sm text-black">1USD=80INR</p>
+            </div>
+
+            <div class="w-full h-14 flex items-center justify-center mb-6 overflow-hidden ">
+                <button class=" hover:bg-yellow-700 text-white w-[200px] h-12 rounded-lg bg-violet-600 shadow-lg"> Get Exchange Rate</button>
+            </div>
+           
+
+
+        </div>
+
+    </form>
+    <script src="app.js"> </script>
+   
+   
+</body>
+</html>
